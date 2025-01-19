@@ -20,5 +20,4 @@ int main () {
     }
     gpio_put(LED_PIN, 0);
   }
-
 }

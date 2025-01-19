@@ -6,7 +6,7 @@
 #define BUTTON_PIN 5
 
 int main () {
-  //inicializa e configura os pinos como entrada ou saída
+  //inicializa e configura os pinos como entrada ou saÃ­da
   gpio_init(LED_PIN);
   gpio_set_dir(LED_PIN, GPIO_OUT);
 
@@ -14,7 +14,7 @@ int main () {
   gpio_set_dir(BUTTON_PIN, GPIO_IN);
 
   while (true) {
-    //get é como se fosse receber e put é literalmente colocar
+    //get Ã© como se fosse receber e put Ã© literalmente colocar
     while (gpio_get(BUTTON_PIN)) {
       gpio_put(LED_PIN, 1);
     }
